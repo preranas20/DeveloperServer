@@ -26,7 +26,7 @@ function AppViewModel() {
             messageText:self.messageText(),
             toPhoneNumber:self.toPhoneNumber()
         }),
-            url: self.urlIP()+"/",
+            url: self.urlIP()+"/user/sendToDevice",
            
             success: function(result) {
                 //Write your code here
