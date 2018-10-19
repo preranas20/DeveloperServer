@@ -30,7 +30,7 @@ return;
         method: "POST",
         header:{ contentType: 'application/json'},
         data: JSON.stringify({
-            APIKey: self.APIKey(),
+            apiKey: self.APIKey(),
             phone:self.phone() ,
             messageText:self.messageText(),
             toPhoneNumber:self.toPhoneNumber()
