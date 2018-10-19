@@ -62,7 +62,7 @@ router.post('/sms', function(req1, res, next) {
 
     console.log("recieved sms ");
     console.log(req1);
-    res.send(req.body.messageText);
+    res.send(req1.body.messageText);
     });
 
 
