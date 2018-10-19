@@ -21,7 +21,7 @@ function AppViewModel() {
         method: "POST",
         contentType: 'application/json',
         data: JSON.stringify({
-            APIKey: self.apikey(),
+            APIKey: self.APIKey(),
             phone:self.phone() ,
             messageText:self.messageText(),
             toPhoneNumber:self.toPhoneNumber()
