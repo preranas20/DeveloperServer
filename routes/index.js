@@ -13,10 +13,10 @@ router.get('/', function(req1, res, next) {
 
 	console.log("i am hitting my method");
   const postData = JSON.stringify({
-	apiKey:"X67ErZWx2WnpdJGzmvrgAFGI8KP9HvgFGSRUMsPS",
+	apiKey:"FLua1wkU1bzXBlAcby4FBGZ4bIRglwFkWjaQB9VH",
 	phone:"+19804309833",
 	messageText:" developer is sending this text",
-	toPhoneNumber:"+17049066266"});
+	toPhoneNumber:"+19804309833"});
 
 
 
