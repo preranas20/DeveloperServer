@@ -16,7 +16,15 @@ function AppViewModel() {
     
     self.sendMessage = function() {
 
-
+var APIKey= self.APIKey(),
+var phone=self.phone() ,
+var messageText=self.messageText(),
+var toPhoneNumber=self.toPhoneNumber()
+if(APIKey== '' ||phone== '' ||messageText== '' || toPhoneNumber== '' )
+{
+    $.toast({heading:'error',text:" complete all the fields.",icon:'error'});
+return;
+}
     $.ajax({
         method: "POST",
         contentType: 'application/json',
