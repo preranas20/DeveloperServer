@@ -28,7 +28,7 @@ return;
 }
     $.ajax({
         method: "POST",
-        header:{ contentType: 'application/json'},
+        headers:{ 'content-type': 'application/json'},
         data: JSON.stringify({
             apiKey: self.APIKey(),
             phone:self.phone() ,
@@ -55,7 +55,7 @@ return;
             error:
             function(result) {
                 //Write your code here
-               
+               console.log(result);
                 $.toast({heading:'error',text:result.responseJSON.message,icon:'error'});
                 }
         
