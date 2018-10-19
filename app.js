@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/', indexRouter);
+app.use('/', indexRouter);
 app.get('/index.html',function(req,res){
   res.sendFile(__dirname+'/public/index.html');
   //__dirname : It will resolve to your project folder.
