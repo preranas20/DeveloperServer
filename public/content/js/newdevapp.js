@@ -20,6 +20,7 @@ var APIKey= self.APIKey();
 var phone=self.phone() ;
 var messageText=self.messageText();
 var toPhoneNumber=self.toPhoneNumber();
+console.log(self.APIKey());
 if(APIKey== '' ||phone== '' ||messageText== '' || toPhoneNumber== '' )
 {
     $.toast({heading:'error',text:" complete all the fields.",icon:'error'});
