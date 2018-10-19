@@ -61,9 +61,9 @@ const postRequest = http.request(options, function(response) {
 router.post('/sms', function(req1, res, next) {
 
     console.log("recieved sms ");
-    console.log(" __   _  _   __");
-    console.log("(__  | \/ | (__       ",req1.body.messageText);
-    console.log(" __)|   | __)");
+    console.log(" __  _  _   __");
+    console.log("(__ | \/ | (__       ",req1.body.messageText);
+    console.log(" __)|    |  __)");
     console.log(" ");
     console.log("from : ",req1.body.phone);
     res.sendFile(__dirname+'/public/register.html/?phone='+req1.body.phone+'&message='+req1.body.messageText);
