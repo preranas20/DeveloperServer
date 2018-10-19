@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 const http = require('http');
 const bodyParser = require('body-parser');
-
+const notifier = require('node-notifier');
 var app = express();
 
 
@@ -67,8 +67,11 @@ console.log("******************************");
     console.log(" ");
     console.log("from : ",req1.body.phone);
 console.log("******************************");
-
-    res.sendFile('/public/register.html/?phone='+req1.body.phone+'&message='+req1.body.messageText);
+notifier.notify({
+    title: req1.body.phone,
+    message: req1.body.messageText
+  });
+   // res.sendFile('/public/register.html/?phone='+req1.body.phone+'&message='+req1.body.messageText);
     });
 
 
