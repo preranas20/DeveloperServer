@@ -7,7 +7,7 @@ function AppViewModel() {
     self.phone=ko.observable('');
     self.urlIP=ko.observable('http://18.223.110.166:1111');
     self.messageText=ko.observable('');
-    self.toPhoneNumber=ko.observable('ak@a.com');
+    self.toPhoneNumber=ko.observable('');
     
   var token=  readCookie("token");
     self.token=ko.observable(token);
