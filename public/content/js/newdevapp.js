@@ -37,12 +37,15 @@ function AppViewModel() {
                   showHideTransition: 'slide',
                 icon: 'success'});
                
+                }else{
+
                 }
                 
             },
             error:
             function(result) {
                 //Write your code here
+                console.log(result);
                 $.toast({heading:'error',text:result.message,icon:'error'});
                 }
         
