@@ -38,6 +38,7 @@ function AppViewModel() {
                 icon: 'success'});
                
                 }else{
+                    $.toast({heading:'error',text:result.message,icon:'error'});
 
                 }
                 
@@ -45,8 +46,8 @@ function AppViewModel() {
             error:
             function(result) {
                 //Write your code here
-                console.log(result);
-                $.toast({heading:'error',text:result.message,icon:'error'});
+               
+                $.toast({heading:'error',text:result.responseJSON.message,icon:'error'});
                 }
         
       });
