@@ -28,7 +28,7 @@ return;
 }
     $.ajax({
         method: "POST",
-        header:{ contentType: 'application/json',
+        header:{ contentType: 'application/json'},
         data: JSON.stringify({
             APIKey: self.APIKey(),
             phone:self.phone() ,
