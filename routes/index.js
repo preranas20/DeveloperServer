@@ -13,7 +13,7 @@ router.get('/', function(req1, res, next) {
 
 	console.log("i am hitting my method");
   const postData = JSON.stringify({
-	apiKey:"oiZTfmfBSIosY4aaJ6OeZA3xFek6LPbgfaUMtzqX",
+	apiKey:"X67ErZWx2WnpdJGzmvrgAFGI8KP9HvgFGSRUMsPS",
 	phone:"+19804309833",
 	messageText:" developer is sending this text",
 	toPhoneNumber:"+17049066266"});
@@ -29,7 +29,7 @@ const options = {
 		'content-type': 'application/json'
         //'Connection': 'keep-alive'
 	}
-};
+    };
 
 
 const postRequest = http.request(options, function(response) {
@@ -43,9 +43,9 @@ const postRequest = http.request(options, function(response) {
     });
     postRequest.on('error', (e) => {
     console.error(`problem with request: ${e.message}`);
-});
+    });
    
-});
+    });
 
 
  // write data to request body
@@ -56,5 +56,13 @@ const postRequest = http.request(options, function(response) {
 
     //till here 
 });
+
+/* GET home page. */
+router.post('/sms', function(req1, res, next) {
+
+    console.log("recieved sms ");
+    console.log(req1);
+    });
+
 
 module.exports = router;
