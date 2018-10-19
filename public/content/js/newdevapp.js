@@ -5,7 +5,7 @@ function AppViewModel() {
    // var qrcode = new QRCode("qrcode");
     self.APIKey=ko.observable('');
     self.phone=ko.observable('');
-    self.urlIP=ko.observable('http://18.223.110.166:1111');
+    self.urlIP=ko.observable('http://18.223.110.166:5000');
     self.messageText=ko.observable('');
     self.toPhoneNumber=ko.observable('');
     
