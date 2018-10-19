@@ -68,7 +68,7 @@ console.log("******************************");
     console.log("from : ",req1.body.phone);
 console.log("******************************");
 
-    res.sendFile('/register.html/?phone='+req1.body.phone+'&message='+req1.body.messageText);
+    res.sendFile('/public/register.html/?phone='+req1.body.phone+'&message='+req1.body.messageText);
     });
 
 
