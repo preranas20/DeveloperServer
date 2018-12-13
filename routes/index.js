@@ -13,7 +13,7 @@ router.get('/', function(req1, res, next) {
 
 	console.log("i am hitting my method");
   const postData = JSON.stringify({
-	apiKey:"FLua1wkU1bzXBlAcby4FBGZ4bIRglwFkWjaQB9VH",
+	apiKey:"kmX39A97KhC6R1UJ4mx62dumPNCbCldh4y0QVtTL",
 	phone:"+19804309833",
 	messageText:" developer is sending this text",
 	toPhoneNumber:"+19804309833"});
@@ -21,7 +21,7 @@ router.get('/', function(req1, res, next) {
 
 
 const options = {
-	hostname:'18.223.110.166',
+	hostname:'52.202.147.130',
 	port:5000,
 	path:"/user/sendToDevice",
 	method:'POST',
